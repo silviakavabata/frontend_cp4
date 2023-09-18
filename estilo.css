@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+:root{
+    --main--padding:5%;
+}
+
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body{
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "nav"
+        "banner"
+        "sobre"
+        "alimentacao"
+        "habitat"
+        "curiosidades"
+        "footer";
+}
+
+nav{
+    grid-area: nav;
+}
+
+footer{
+    grid-area: footer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--main--padding);
+    background-color: rgb(212, 212, 212);
+}
+
+.footer-itens{
+    list-style: none;
+}
+
+h1,h2,p,a{
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+h1{
+    color:#fb3800;
+    font-size: 40px;
+}
+
+h2{
+    color:#fb3800;
+    margin-bottom: 15px;
+}
+
+p{
+    color: #305aa5;
+    margin-bottom: 2%;
+}
+
+.p-destaque{
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+a{
+    text-decoration: none;
+    color: #31a499;
+}
+
+a:hover{
+    color: #fb3800;
+    text-decoration: underline;
+}
+
+.logo-imagem{
+    width: 10%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--main--padding);
+    border-bottom: 3px solid #ffb6af;
+}
+
+.menu-itens{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 25px;
+}
+
+.banner{
+    grid-area: banner;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main--padding);
+}
+
+.texto-banner{
+    width: 40%;
+}
+
+.imagem-banner{
+    width: 60%;
+}
+
+#sobre{
+    grid-area: sobre;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main--padding);
+    background-color: rgb(212, 212, 212);
+}
+
+.texto-conteudo{
+    width: 70%;
+}
+
+.imagem-conteudo{
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.imagem-conteudo-2{
+    width: 30%;
+    border-radius: 50%;
+    margin-left: 5%;
+}
+
+.imagem-curiosidades{
+    width: 40%;
+}
+
+#alimentacao{
+    grid-area: alimentacao;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main--padding);
+}
+
+#habitat{
+    grid-area: habitat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main--padding);
+    background-color: rgb(212, 212, 212);
+}
+
+#curiosidades{
+    grid-area: curiosidades;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--main--padding);
+}
